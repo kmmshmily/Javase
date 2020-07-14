@@ -13,7 +13,7 @@ public class VarTest {
         var a = 1;
         System.out.println(a);
         a = 3;
-        var d = (byte) 13;
+        var d = (byte) 1_3;
 //        d = a;
         a = (byte)1;
 
