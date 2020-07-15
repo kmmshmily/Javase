@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Hello world!
  */
-public class App {
+public class AppSortTest {
     public static void main(String[] args) throws Exception {
 //        SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
 ////        Date date = new Date(Long.valueOf("637404641222400000"));
