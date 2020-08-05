@@ -9,7 +9,7 @@ package javase.standard;
 
 public class MathTest {
     public static void main(String[] args) {
-        var a = 3.2;
+        double a = 3.2;
         System.out.println(Math.pow(a, 5));
         System.out.println(Math.sqrt(a));
         System.out.println("..");
