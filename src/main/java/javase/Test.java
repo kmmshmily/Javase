@@ -23,7 +23,7 @@ public class Test {
 //
 //        System.out.println("".equals(new StringBuffer().toString()));
 //
-//        Test test = new Test();
+//        GuavaTest test = new GuavaTest();
 //        System.out.println(ClassLayout.parseInstance(test).toPrintable());
 
         Test test = new Test();

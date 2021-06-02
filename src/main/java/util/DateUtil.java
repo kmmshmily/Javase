@@ -1,9 +1,11 @@
 package util;
 
 import java.math.BigDecimal;
+import java.sql.SQLOutput;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -15,25 +17,42 @@ import java.util.Date;
 
 public class DateUtil {
     public static void main(String[] args) {
-        DateTimeFormatter isoDate = DateTimeFormatter.ISO_DATE;
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
+        String str = "93408131756638208";
+        System.out.println(Long.valueOf(str));
+
         Date date = new Date();
-//        Date currentDate = new Date();
-//        System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(currentDate));
-//        currentDate.setDate(currentDate.getDate()+1);  //+1天时间
-//        System.out.println(new SimpleDateFormat("yyyy-MM-dd").format(currentDate));
-//        System.out.println(LocalDate.now().plusDays(1).format(isoDate));
-//
-//
-//        Date currentDate = new Date();
-//        currentDate.setDate(currentDate.getDate()+365 *4);  //+1天时间
-//        String deliveryDate = new SimpleDateFormat("yyyy-MM-dd").format(currentDate);
-//        System.out.println(deliveryDate);
+        date.setDate(31);
+        System.out.println(date);
+        System.out.println(date.getTime());
+        System.out.println(System.currentTimeMillis());
 
-        System.out.println("A".equalsIgnoreCase("b"));
-        System.out.println(new BigDecimal(-2));
-        BigDecimal b1 = new BigDecimal(100);
-        System.out.println(b1.add(b1.negate()));
+        BigDecimal decimal = new BigDecimal(100);
+        if(decimal != null){
+            System.out.println(decimal.intValue());
+        }
 
+
+//        Calendar calendar = Calendar.getInstance();
+//        String createEndTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(calendar.getTime());
+//        calendar.set(Calendar.HOUR_OF_DAY, calendar.get(Calendar.HOUR_OF_DAY) - 20);
+//        calendar.add(Calendar.MINUTE, -42);
+//        String createStartTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(calendar.getTime());
+//        System.out.println("开始创建时间：" + createStartTime);
+//        System.out.println("结束创建时间:" + createEndTime);
+
+//        Calendar date = Calendar.getInstance();
+//        String yearSuffix = "FD"+date.get(Calendar.YEAR)
+//                +date.get(Calendar.MONTH)
+//                +date.get(Calendar.DATE);
+//        System.out.println(yearSuffix);
+//
+//        System.out.println("FD"+new SimpleDateFormat("yyyyMMdd").format(new Date()));
+
+//        Date date = new Date();
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        System.out.println(sdf.format(date));
+//        date.setSeconds(00);
+//        System.out.println(sdf.format(date));
     }
 }   
